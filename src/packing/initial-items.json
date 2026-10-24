@@ -1,0 +1,1658 @@
+[
+  {
+    "id": "excel-backpack-008",
+    "name": "护照 + 有效 F-1 签证",
+    "quantity": 1,
+    "unit": "套",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "保留原件，务必随身",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 8,
+      "subcategory": "证件",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-009",
+    "name": "USC I-20（已按要求签字）",
+    "quantity": 1,
+    "unit": "份",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "入境时随时可取出",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 9,
+      "subcategory": "证件",
+      "quantity": "1份",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-010",
+    "name": "USC 录取通知书",
+    "quantity": 1,
+    "unit": "份",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "建议纸质+电子版",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 10,
+      "subcategory": "证件",
+      "quantity": "1份",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-011",
+    "name": "SEVIS I-901 缴费收据",
+    "quantity": 1,
+    "unit": "份",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "建议打印",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 11,
+      "subcategory": "证件",
+      "quantity": "1份",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-012",
+    "name": "财力证明和其他入境辅助文件",
+    "quantity": 1,
+    "unit": "套",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "随手可取",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 12,
+      "subcategory": "证件",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-013",
+    "name": "机票、美国公寓地址及联系人",
+    "quantity": 1,
+    "unit": "套",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "准备离线版本",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 13,
+      "subcategory": "证件",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-014",
+    "name": "身份证、国内驾驶证（如有）",
+    "quantity": "各1",
+    "unit": "",
+    "category": "backpack",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "如需在美国驾车，另核对当地要求",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 14,
+      "subcategory": "证件",
+      "quantity": "各1",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-015",
+    "name": "重要文件复印件及电子备份",
+    "quantity": 1,
+    "unit": "套",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "与证件原件分开放置",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 15,
+      "subcategory": "证件",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-016",
+    "name": "钱包、银行卡、适量美元现金",
+    "quantity": 1,
+    "unit": "套",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "确认可进行境外交易",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 16,
+      "subcategory": "支付",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-017",
+    "name": "笔记本电脑 + 充电器",
+    "quantity": 1,
+    "unit": "套",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "电池设备随身",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 17,
+      "subcategory": "电子",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-018",
+    "name": "手机 + 充电线",
+    "quantity": 1,
+    "unit": "套",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "保留国内手机号收验证码的能力",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 18,
+      "subcategory": "电子",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-019",
+    "name": "移动电源",
+    "quantity": 1,
+    "unit": "个",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "只能随身，提前核对容量与航司限制",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 19,
+      "subcategory": "电子",
+      "quantity": "1个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-020",
+    "name": "耳机、移动硬盘／U盘（如需）",
+    "quantity": "按需",
+    "unit": "",
+    "category": "backpack",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "重要数据建议多处备份",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 20,
+      "subcategory": "电子",
+      "quantity": "按需",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-021",
+    "name": "美国 SIM/eSIM 启用方案",
+    "quantity": 1,
+    "unit": "套",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "落地可以上网",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 21,
+      "subcategory": "通信",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-022",
+    "name": "必要处方药与英文处方（如需）",
+    "quantity": "按需",
+    "unit": "",
+    "category": "backpack",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "核实入境限制，保留原包装",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 22,
+      "subcategory": "健康",
+      "quantity": "按需",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-023",
+    "name": "眼镜／隐形眼镜（如需）",
+    "quantity": 1,
+    "unit": "套",
+    "category": "backpack",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "随身放易碎物品",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 23,
+      "subcategory": "健康",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-024",
+    "name": "备用内裤 + 袜子",
+    "quantity": "各1",
+    "unit": "",
+    "category": "backpack",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "应对托运行李延误",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 24,
+      "subcategory": "应急",
+      "quantity": "各1",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-backpack-025",
+    "name": "纸巾、空水杯、少量合规旅行用品",
+    "quantity": 1,
+    "unit": "套",
+    "category": "backpack",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "液体遵守安检规则",
+    "weight": null,
+    "source": {
+      "sheet": "随身背包",
+      "row": 25,
+      "subcategory": "应急",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-008",
+    "name": "短袖 T 恤",
+    "quantity": 3,
+    "unit": "件",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "落地首周使用",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 8,
+      "subcategory": "衣物",
+      "quantity": "3件",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-009",
+    "name": "长袖上衣／衬衫",
+    "quantity": 2,
+    "unit": "件",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "适合 LA 冬季早晚",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 9,
+      "subcategory": "衣物",
+      "quantity": "2件",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-010",
+    "name": "卫衣",
+    "quantity": 1,
+    "unit": "件",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "便于叠穿",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 10,
+      "subcategory": "衣物",
+      "quantity": "1件",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-011",
+    "name": "长裤",
+    "quantity": 2,
+    "unit": "条",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "落地首周使用",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 11,
+      "subcategory": "衣物",
+      "quantity": "2条",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-012",
+    "name": "薄外套",
+    "quantity": 1,
+    "unit": "件",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "防凉防风",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 12,
+      "subcategory": "衣物",
+      "quantity": "1件",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-013",
+    "name": "内裤",
+    "quantity": 7,
+    "unit": "条",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "一周换洗",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 13,
+      "subcategory": "衣物",
+      "quantity": "7条",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-014",
+    "name": "袜子",
+    "quantity": 7,
+    "unit": "双",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "一周换洗",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 14,
+      "subcategory": "衣物",
+      "quantity": "7双",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-015",
+    "name": "睡衣",
+    "quantity": 1,
+    "unit": "套",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 15,
+      "subcategory": "衣物",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-016",
+    "name": "拖鞋",
+    "quantity": 1,
+    "unit": "双",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "公寓入住当晚用",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 16,
+      "subcategory": "鞋履",
+      "quantity": "1双",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-017",
+    "name": "牙刷、牙膏、牙线",
+    "quantity": 1,
+    "unit": "套",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "牙膏等液体做好密封",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 17,
+      "subcategory": "洗漱",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-018",
+    "name": "洗面奶、护肤品、防晒霜",
+    "quantity": "少量",
+    "unit": "",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "初到美国够用即可",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 18,
+      "subcategory": "洗漱",
+      "quantity": "少量",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-019",
+    "name": "洗发水、沐浴露旅行装",
+    "quantity": "各1",
+    "unit": "",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "大瓶装到美国再买",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 19,
+      "subcategory": "洗漱",
+      "quantity": "各1",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-020",
+    "name": "剃须刀、梳子、指甲剪",
+    "quantity": "各1",
+    "unit": "",
+    "category": "case26",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "注意剃刀类型的安检规定",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 20,
+      "subcategory": "洗漱",
+      "quantity": "各1",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-021",
+    "name": "毛巾",
+    "quantity": 1,
+    "unit": "条",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 21,
+      "subcategory": "生活",
+      "quantity": "1条",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-022",
+    "name": "美标转换插头",
+    "quantity": 2,
+    "unit": "个",
+    "category": "case26",
+    "priority": "P0",
+    "status": "待准备",
+    "notes": "不是变压器，电器需支持 120V",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 22,
+      "subcategory": "电子配件",
+      "quantity": "2个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-023",
+    "name": "备用数据线",
+    "quantity": 2,
+    "unit": "条",
+    "category": "case26",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 23,
+      "subcategory": "电子配件",
+      "quantity": "2条",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-024",
+    "name": "折叠雨伞",
+    "quantity": 1,
+    "unit": "把",
+    "category": "case26",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "12月可能遇到降雨",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 24,
+      "subcategory": "生活",
+      "quantity": "1把",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-025",
+    "name": "水杯／保温杯",
+    "quantity": 1,
+    "unit": "个",
+    "category": "case26",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 25,
+      "subcategory": "生活",
+      "quantity": "1个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-026",
+    "name": "文具、笔记本",
+    "quantity": "少量",
+    "unit": "",
+    "category": "case26",
+    "priority": "P2",
+    "status": "待准备",
+    "notes": "美国也容易采购",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 26,
+      "subcategory": "学习",
+      "quantity": "少量",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case26-027",
+    "name": "衣物收纳袋",
+    "quantity": "2–3个",
+    "unit": "",
+    "category": "case26",
+    "priority": "P2",
+    "status": "待准备",
+    "notes": "不要为收纳袋占过多重量",
+    "weight": null,
+    "source": {
+      "sheet": "26寸箱",
+      "row": 27,
+      "subcategory": "收纳",
+      "quantity": "2–3个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-008",
+    "name": "短袖 T 恤",
+    "quantity": 4,
+    "unit": "件",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 8,
+      "subcategory": "衣物",
+      "quantity": "4件",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-009",
+    "name": "长袖上衣／衬衫",
+    "quantity": 2,
+    "unit": "件",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 9,
+      "subcategory": "衣物",
+      "quantity": "2件",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-010",
+    "name": "卫衣／毛衣",
+    "quantity": 2,
+    "unit": "件",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 10,
+      "subcategory": "衣物",
+      "quantity": "2件",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-011",
+    "name": "稍厚外套",
+    "quantity": 1,
+    "unit": "件",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "LA 冬季一般不需多件重型羽绒服",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 11,
+      "subcategory": "衣物",
+      "quantity": "1件",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-012",
+    "name": "长裤",
+    "quantity": 2,
+    "unit": "条",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 12,
+      "subcategory": "衣物",
+      "quantity": "2条",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-013",
+    "name": "短裤",
+    "quantity": 2,
+    "unit": "条",
+    "category": "case28",
+    "priority": "P2",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 13,
+      "subcategory": "衣物",
+      "quantity": "2条",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-014",
+    "name": "内裤",
+    "quantity": 5,
+    "unit": "条",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "补充换洗",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 14,
+      "subcategory": "衣物",
+      "quantity": "5条",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-015",
+    "name": "袜子",
+    "quantity": 5,
+    "unit": "双",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "补充换洗",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 15,
+      "subcategory": "衣物",
+      "quantity": "5双",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-016",
+    "name": "睡衣",
+    "quantity": 1,
+    "unit": "套",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 16,
+      "subcategory": "衣物",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-017",
+    "name": "运动服",
+    "quantity": 2,
+    "unit": "套",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 17,
+      "subcategory": "运动",
+      "quantity": "2套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-018",
+    "name": "备用运动鞋",
+    "quantity": 1,
+    "unit": "双",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "鞋内可放袜子节约空间",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 18,
+      "subcategory": "鞋履",
+      "quantity": "1双",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-019",
+    "name": "稍正式的鞋",
+    "quantity": 1,
+    "unit": "双",
+    "category": "case28",
+    "priority": "P2",
+    "status": "待准备",
+    "notes": "有余量再带",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 19,
+      "subcategory": "鞋履",
+      "quantity": "1双",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-020",
+    "name": "商务休闲服装",
+    "quantity": 1,
+    "unit": "套",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "课堂展示、Networking、面试",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 20,
+      "subcategory": "职业",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-021",
+    "name": "帽子",
+    "quantity": 1,
+    "unit": "顶",
+    "category": "case28",
+    "priority": "P2",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 21,
+      "subcategory": "配饰",
+      "quantity": "1顶",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-022",
+    "name": "太阳镜",
+    "quantity": 1,
+    "unit": "副",
+    "category": "case28",
+    "priority": "P2",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 22,
+      "subcategory": "配饰",
+      "quantity": "1副",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-023",
+    "name": "备用眼镜（如需）",
+    "quantity": 1,
+    "unit": "副",
+    "category": "case28",
+    "priority": "P1",
+    "status": "待准备",
+    "notes": "最好有眼镜盒",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 23,
+      "subcategory": "健康",
+      "quantity": "1副",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-024",
+    "name": "个人偏好的护肤品补充装",
+    "quantity": "少量",
+    "unit": "",
+    "category": "case28",
+    "priority": "P2",
+    "status": "待准备",
+    "notes": "注意液体与重量",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 24,
+      "subcategory": "个人护理",
+      "quantity": "少量",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-025",
+    "name": "备用配件（无备用锂电池）",
+    "quantity": "按需",
+    "unit": "",
+    "category": "case28",
+    "priority": "P2",
+    "status": "待准备",
+    "notes": "备用电池必须随身",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 25,
+      "subcategory": "电子配件",
+      "quantity": "按需",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-026",
+    "name": "轻便购物袋",
+    "quantity": 2,
+    "unit": "个",
+    "category": "case28",
+    "priority": "P2",
+    "status": "待准备",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 26,
+      "subcategory": "生活",
+      "quantity": "2个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-case28-027",
+    "name": "特殊个人用品",
+    "quantity": "按需",
+    "unit": "",
+    "category": "case28",
+    "priority": "P2",
+    "status": "待准备",
+    "notes": "确有需要再放入",
+    "weight": null,
+    "source": {
+      "sheet": "28寸箱",
+      "row": 27,
+      "subcategory": "其他",
+      "quantity": "按需",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-008",
+    "name": "枕头",
+    "quantity": 1,
+    "unit": "个",
+    "category": "shopping",
+    "priority": "P0",
+    "status": "待购买",
+    "notes": "抵达当天；先确认公寓是否提供",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 8,
+      "subcategory": "卧室",
+      "quantity": "1个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-009",
+    "name": "被子／被芯",
+    "quantity": 1,
+    "unit": "条",
+    "category": "shopping",
+    "priority": "P0",
+    "status": "待购买",
+    "notes": "抵达当天；确认季节与床型",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 9,
+      "subcategory": "卧室",
+      "quantity": "1条",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-010",
+    "name": "床单、被套、枕套",
+    "quantity": "1–2套",
+    "unit": "",
+    "category": "shopping",
+    "priority": "P0",
+    "status": "待购买",
+    "notes": "按床垫尺寸购买",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 10,
+      "subcategory": "卧室",
+      "quantity": "1–2套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-011",
+    "name": "床垫保护套",
+    "quantity": 1,
+    "unit": "个",
+    "category": "shopping",
+    "priority": "P1",
+    "status": "待购买",
+    "notes": "入住首周",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 11,
+      "subcategory": "卧室",
+      "quantity": "1个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-012",
+    "name": "衣架",
+    "quantity": "15–20个",
+    "unit": "",
+    "category": "shopping",
+    "priority": "P1",
+    "status": "待购买",
+    "notes": "入住首周",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 12,
+      "subcategory": "衣物收纳",
+      "quantity": "15–20个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-013",
+    "name": "洗衣液",
+    "quantity": 1,
+    "unit": "瓶",
+    "category": "shopping",
+    "priority": "P1",
+    "status": "待购买",
+    "notes": "入住首周",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 13,
+      "subcategory": "洗衣",
+      "quantity": "1瓶",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-014",
+    "name": "洗发水、沐浴露大瓶装",
+    "quantity": "各1",
+    "unit": "",
+    "category": "shopping",
+    "priority": "P1",
+    "status": "待购买",
+    "notes": "抵达后补充",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 14,
+      "subcategory": "洗漱",
+      "quantity": "各1",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-015",
+    "name": "纸巾、卫生纸",
+    "quantity": 1,
+    "unit": "批",
+    "category": "shopping",
+    "priority": "P0",
+    "status": "待购买",
+    "notes": "抵达当天",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 15,
+      "subcategory": "日用",
+      "quantity": "1批",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-016",
+    "name": "垃圾桶、垃圾袋",
+    "quantity": 1,
+    "unit": "套",
+    "category": "shopping",
+    "priority": "P1",
+    "status": "待购买",
+    "notes": "入住首周",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 16,
+      "subcategory": "日用",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-017",
+    "name": "浴帘、防滑垫（按需）",
+    "quantity": "按需",
+    "unit": "",
+    "category": "shopping",
+    "priority": "P1",
+    "status": "待购买",
+    "notes": "先查看公寓配置",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 17,
+      "subcategory": "浴室",
+      "quantity": "按需",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-018",
+    "name": "扫把、拖把、清洁剂",
+    "quantity": 1,
+    "unit": "套",
+    "category": "shopping",
+    "priority": "P1",
+    "status": "待购买",
+    "notes": "首周按需购买",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 18,
+      "subcategory": "清洁",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-019",
+    "name": "锅、平底锅及厨具",
+    "quantity": 1,
+    "unit": "套",
+    "category": "shopping",
+    "priority": "P1",
+    "status": "待购买",
+    "notes": "确认租房是否带厨具",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 19,
+      "subcategory": "厨房",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-020",
+    "name": "餐具、碗、杯子",
+    "quantity": 1,
+    "unit": "套",
+    "category": "shopping",
+    "priority": "P1",
+    "status": "待购买",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 20,
+      "subcategory": "厨房",
+      "quantity": "1套",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-021",
+    "name": "美国电压电饭煲（如需）",
+    "quantity": 1,
+    "unit": "个",
+    "category": "shopping",
+    "priority": "P2",
+    "status": "待购买",
+    "notes": "确保适用 120V",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 21,
+      "subcategory": "厨房",
+      "quantity": "1个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-022",
+    "name": "美标排插",
+    "quantity": 1,
+    "unit": "个",
+    "category": "shopping",
+    "priority": "P1",
+    "status": "待购买",
+    "notes": "购买符合美国标准产品",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 22,
+      "subcategory": "电子",
+      "quantity": "1个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-023",
+    "name": "台灯",
+    "quantity": 1,
+    "unit": "个",
+    "category": "shopping",
+    "priority": "P2",
+    "status": "待购买",
+    "notes": "如果公寓光线不足再买",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 23,
+      "subcategory": "学习",
+      "quantity": "1个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-024",
+    "name": "衣物收纳箱",
+    "quantity": "1–2个",
+    "unit": "",
+    "category": "shopping",
+    "priority": "P2",
+    "status": "待购买",
+    "notes": "入住后量尺寸",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 24,
+      "subcategory": "收纳",
+      "quantity": "1–2个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-025",
+    "name": "洗衣篮",
+    "quantity": 1,
+    "unit": "个",
+    "category": "shopping",
+    "priority": "P2",
+    "status": "待购买",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 25,
+      "subcategory": "洗衣",
+      "quantity": "1个",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-shopping-026",
+    "name": "首周食品、饮用水、生活杂货",
+    "quantity": 1,
+    "unit": "批",
+    "category": "shopping",
+    "priority": "P0",
+    "status": "待购买",
+    "notes": "抵达当日最实用",
+    "weight": null,
+    "source": {
+      "sheet": "美国采购",
+      "row": 26,
+      "subcategory": "食品",
+      "quantity": "1批",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-008",
+    "name": "确认 I-20 最早允许入境日期",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "12/22出发前必须符合入境时间要求",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 8,
+      "subcategory": "入境",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-009",
+    "name": "确认机票允许托运两件行李",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "不同航司与票价不同",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 9,
+      "subcategory": "航司",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-010",
+    "name": "测量28寸箱外部三边",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "轮子和把手计入尺寸",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 10,
+      "subcategory": "航司",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-011",
+    "name": "分别称重26寸与28寸箱",
+    "quantity": 2,
+    "unit": "件",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "先按每件不超过23kg规划，最终以航司为准",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 11,
+      "subcategory": "航司",
+      "quantity": "2件",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-012",
+    "name": "核对护照、签证和入境文件",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "原件随身，另备电子版",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 12,
+      "subcategory": "证件",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-013",
+    "name": "确认公寓有无家具、床垫、厨具",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "决定美国采购项目",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 13,
+      "subcategory": "住房",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-014",
+    "name": "确认入住时间及领取钥匙方式",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 14,
+      "subcategory": "住房",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-015",
+    "name": "安排 LAX 机场到公寓交通",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "特别注意落地当地日期与时间",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 15,
+      "subcategory": "交通",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-016",
+    "name": "安排手机漫游／美国 eSIM",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "保证落地能联网",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 16,
+      "subcategory": "通信",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-017",
+    "name": "确认银行卡可用于美国",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 17,
+      "subcategory": "支付",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-018",
+    "name": "备份手机和电脑重要资料",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P1",
+    "status": "未完成",
+    "notes": "",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 18,
+      "subcategory": "数据",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-019",
+    "name": "完成 USC 入学健康资料要求",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "以校方清单为准",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 19,
+      "subcategory": "学校",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-020",
+    "name": "核对药品、食品、申报要求",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "携带食品、农产品须按规定申报",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 20,
+      "subcategory": "海关",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-021",
+    "name": "行李箱挂姓名、邮箱及联系电话标签",
+    "quantity": 2,
+    "unit": "件",
+    "category": "checklist",
+    "priority": "P1",
+    "status": "未完成",
+    "notes": "不要对外公开多余个人信息",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 21,
+      "subcategory": "行李",
+      "quantity": "2件",
+      "status": "未开始"
+    }
+  },
+  {
+    "id": "excel-checklist-022",
+    "name": "移动电源与备用锂电池全部随身",
+    "quantity": 1,
+    "unit": "项",
+    "category": "checklist",
+    "priority": "P0",
+    "status": "未完成",
+    "notes": "不要托运",
+    "weight": null,
+    "source": {
+      "sheet": "出发检查",
+      "row": 22,
+      "subcategory": "电池",
+      "quantity": "1项",
+      "status": "未开始"
+    }
+  }
+]

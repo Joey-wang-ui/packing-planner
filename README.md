@@ -49,7 +49,9 @@ PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e
 
 ## GitHub Pages 部署
 
-`.github/workflows/deploy.yml` 已配置测试、构建及 Pages 部署：
+仓库：[Joey-wang-ui/packing-planner](https://github.com/Joey-wang-ui/packing-planner)。
+
+`.github/workflows/deploy.yml` 已配置测试、构建、Pages 配置检查及部署：
 
 1. 提交代码并推送到仓库 `main` 分支。
 2. 仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。

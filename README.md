@@ -60,7 +60,7 @@ PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e
 
 需要仓库允许 Actions 使用 `pages: write`、`id-token: write`；如有保护规则需仓库维护者审批。Vite 使用相对 `base: './'`，支持仓库子路径、根站点和自定义域名。页面导航采用应用内状态，无服务端路由，刷新不会访问虚构路径；刷新回到总览，数据保留。
 
-本次环境的 GitHub API 权限检查返回 Forbidden，**尚未部署或验证线上地址**。不要将本地开发服务器视为线上网站。发布到同一 origin 的多个路径会共享 localStorage，建议一个 origin 只运行一个该工具实例。
+已发布：[打开 USC Packing Planner](https://joey-wang-ui.github.io/packing-planner/)。2026-10-24 的 [GitHub Actions 运行](https://github.com/Joey-wang-ui/packing-planner/actions/runs/40097631610) 已确认 build 与 deploy 成功并返回此地址。当前环境的 GitHub API 与站点直接访问受限，发布状态依据 GitHub Actions 的部署结果；本地已验证真实浏览器交互及 Pages 子路径静态资源。不要将本地开发服务器视为线上网站。发布到同一 origin 的多个路径会共享 localStorage，建议一个 origin 只运行一个该工具实例。
 
 ## 目录
 

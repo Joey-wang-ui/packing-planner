@@ -80,9 +80,15 @@ export default function App() {
     [undo, setUndo] = useState<{ item: Item; index: number } | null>(null),
     [expanded, setExpanded] = useState<string[]>([]),
     [nav, setNav] = useState(false),
-    [today, setToday] = useState(new Date());
+    [today, setToday] = useState(new Date()),
+    [saved, setSaved] = useState(false),
+    [searchIntent, setSearchIntent] = useState(0);
   const closeEditor = useCallback(() => setEdit(undefined), []);
   const input = useRef<HTMLInputElement>(null);
+  const searchInput = useRef<HTMLInputElement>(null);
+  const saveTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined,
+  );
   const latest = useRef(data);
   latest.current = data;
   useEffect(() => {
@@ -110,6 +116,36 @@ export default function App() {
     window.addEventListener("storage", listener);
     return () => window.removeEventListener("storage", listener);
   }, []);
+  useEffect(() => () => clearTimeout(saveTimer.current), []);
+  useEffect(() => {
+    if (searchIntent > 0) searchInput.current?.focus({ preventScroll: true });
+  }, [searchIntent]);
+  useEffect(() => {
+    const handle = (e: KeyboardEvent) => {
+      if (e.isComposing || edit !== undefined || deleting || confirm) return;
+      const target = e.target as HTMLElement;
+      const typing =
+        target?.matches?.("input,textarea,select") || target?.isContentEditable;
+      const shortcut = (e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k";
+      if (
+        shortcut ||
+        (e.key === "/" && !typing && !e.ctrlKey && !e.metaKey && !e.altKey)
+      ) {
+        e.preventDefault();
+        setPage("list");
+        setNav(false);
+        setSearchIntent((value) => value + 1);
+        window.scrollTo({ top: 0 });
+      }
+    };
+    window.addEventListener("keydown", handle);
+    return () => window.removeEventListener("keydown", handle);
+  }, [edit, deleting, confirm]);
+  function signalSaved() {
+    setSaved(true);
+    clearTimeout(saveTimer.current);
+    saveTimer.current = setTimeout(() => setSaved(false), 1600);
+  }
   function commit(next: Planner) {
     if (blocked) {
       setNotice("保存已暂停，请刷新加载最新数据，或导入有效备份恢复。");
@@ -119,6 +155,7 @@ export default function App() {
       stateSchema.parse(next);
       localStorage.setItem(KEY, JSON.stringify(next));
       setData(next);
+      signalSaved();
       return true;
     } catch {
       setNotice(
@@ -132,6 +169,7 @@ export default function App() {
       localStorage.setItem(KEY, JSON.stringify(next));
       setData(next);
       setBlocked(false);
+      signalSaved();
       setUndo(null);
       setNotice("清单已更新并保存在当前浏览器。");
     } catch {
@@ -145,6 +183,7 @@ export default function App() {
     setSearch("");
     setFilter("all");
     setPriority("all");
+    window.scrollTo({ top: 0 });
   }
   function update(item: Item) {
     return commit({
@@ -377,12 +416,15 @@ export default function App() {
                   : "行李清单"}
             </span>
           </div>
-          <span className="save-state">
+          <span
+            className={`save-state ${saved && !blocked ? "saved" : ""}`}
+            aria-live="polite"
+          >
             <span className={`dot ${blocked ? "warning" : ""}`} />
-            {blocked ? "保存已暂停" : "本地自动保存"}
+            {blocked ? "保存已暂停" : saved ? "已保存" : "本地自动保存"}
           </span>
         </header>
-        <main>
+        <main key={page} className="page-content">
           {notice && (
             <div className="notice" role="status">
               <AlertCircle size={17} />
@@ -577,7 +619,15 @@ export default function App() {
                 <div className="search">
                   <Search size={18} />
                   <input
+                    ref={searchInput}
                     aria-label="搜索物品"
+                    title="搜索物品（/ 或 Ctrl/Cmd + K）"
+                    onKeyDown={(e) => {
+                      if (e.key === "Escape") {
+                        e.preventDefault();
+                        setSearch("");
+                      }
+                    }}
                     placeholder="搜索物品名称、备注…"
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}

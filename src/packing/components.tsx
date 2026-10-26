@@ -21,7 +21,10 @@ export function Modal({
           'button,input,select,textarea,[tabindex="0"]',
         ),
       ).filter((e) => !e.hasAttribute("disabled"));
-    nodes()[0]?.focus();
+    const controls = nodes();
+    (
+      controls.find((el) => el.matches("input,textarea,select")) ?? controls[0]
+    )?.focus();
     const handle = (e: KeyboardEvent) => {
       if (e.key === "Escape") close();
       if (e.key === "Tab") {

@@ -179,3 +179,40 @@ test("desktop overview", async ({ page }) => {
     page.getByRole("heading", { name: "总览", exact: true }),
   ).toBeVisible();
 });
+
+test("quick search, editor focus and saved feedback respect reduced motion", async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/");
+  await expect(
+    page.getByRole("heading", { name: "总览", exact: true }),
+  ).toBeVisible();
+  await page.keyboard.press("/");
+  const search = page.getByRole("textbox", { name: "搜索物品", exact: true });
+  await expect(search).toBeFocused();
+  await search.fill("护照");
+  await expect(page.locator(".item")).toHaveCount(2);
+  await page.keyboard.press("Escape");
+  await expect(search).toHaveValue("");
+  await expect(page.locator(".item")).toHaveCount(92);
+  await page
+    .getByRole("checkbox", { name: "完成 护照 + 有效 F-1 签证", exact: true })
+    .check();
+  await expect(page.locator(".save-state")).toHaveText("已保存");
+  await page
+    .getByRole("button", { name: "添加物品", exact: true })
+    .first()
+    .click();
+  await expect(page.getByLabel("物品名称", { exact: true })).toBeFocused();
+  await page.keyboard.type("旅行/收纳");
+  await expect(page.getByRole("dialog")).toBeVisible();
+  expect(
+    await page
+      .getByRole("dialog")
+      .evaluate((el) => getComputedStyle(el).animationName),
+  ).toBe("none");
+  await page.getByRole("button", { name: "关闭弹窗", exact: true }).click();
+  await page.keyboard.press("Control+k");
+  await expect(search).toBeFocused();
+});

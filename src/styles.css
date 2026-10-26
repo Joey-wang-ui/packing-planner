@@ -1911,3 +1911,155 @@ main {
 .brand-mark {
   flex-shrink: 0;
 }
+
+.item-name > button,
+.important > button {
+  font-size: 17px;
+  line-height: 1.65;
+}
+@media (max-width: 560px) {
+  .item-name > button,
+  .important > button {
+    font-size: 18px;
+  }
+}
+
+/* Short, restrained feedback for navigation and direct manipulation. */
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes overlay-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes modal-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes check-enter {
+  from {
+    opacity: 0;
+    transform: rotate(45deg) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+  }
+}
+@keyframes save-pulse {
+  from {
+    box-shadow: 0 0 0 0 #4e917830;
+  }
+  to {
+    box-shadow: 0 0 0 5px #4e917800;
+  }
+}
+.page-content {
+  animation: page-enter 0.2s ease-out;
+}
+.overlay {
+  animation: overlay-enter 0.15s ease-out;
+}
+.modal {
+  animation: modal-enter 0.2s ease-out;
+}
+.notice {
+  animation: page-enter 0.18s ease-out;
+}
+.item-detail {
+  animation: page-enter 0.16s ease-out;
+}
+button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+.space-card:active {
+  transform: scale(0.985);
+}
+.checkbox {
+  transition:
+    background 0.16s,
+    border-color 0.16s,
+    box-shadow 0.16s;
+}
+.checkbox:checked::after {
+  animation: check-enter 0.16s ease-out;
+}
+.check-hit:hover .checkbox {
+  border-color: #ae6c7e;
+  box-shadow: 0 0 0 4px #961c3608;
+}
+.item-main {
+  transition: background 0.2s;
+}
+.item.completed .item-main {
+  background: #faf7f8;
+}
+.item-name > button,
+.important > button {
+  transition: color 0.16s;
+}
+.search {
+  transition:
+    border-color 0.16s,
+    box-shadow 0.16s;
+}
+.search:focus-within {
+  border-color: #b97588;
+  box-shadow: 0 0 0 3px #961c3609;
+}
+.save-state {
+  min-width: 92px;
+  justify-content: flex-end;
+  transition: color 0.2s;
+}
+.save-state.saved {
+  color: #3f8067;
+}
+.save-state.saved .dot {
+  animation: save-pulse 0.6s ease-out 2;
+}
+@media (hover: hover) {
+  .item-main > .icon-btn {
+    opacity: 0.6;
+  }
+  .item-main:hover > .icon-btn,
+  .item-main:focus-within > .icon-btn {
+    opacity: 1;
+  }
+  .important > button:hover,
+  .item-name > button:hover {
+    color: #961c36;
+    background: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  button:active:not(:disabled),
+  .space-card:hover,
+  .space-card:active {
+    transform: none;
+  }
+}

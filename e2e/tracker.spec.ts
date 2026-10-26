@@ -14,7 +14,9 @@ test("92 original rows, CRUD, live editing, persistence, filters and undo", asyn
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
-  await expect(page.getByText("清单已就位")).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "总览", exact: true }),
+  ).toBeVisible();
   await page.getByRole("button", { name: /全部清单/ }).click();
   await expect(page.locator(".item")).toHaveCount(92);
   await add(page, "测试证件袋");
@@ -80,13 +82,11 @@ test("independent weights, JSON export/import validation and reset confirmation"
   const download = await downloadPromise;
   const path = await download.path();
   expect(path).toBeTruthy();
-  await page
-    .getByLabel("选择 JSON 备份", { exact: true })
-    .setInputFiles({
-      name: "invalid.json",
-      mimeType: "application/json",
-      buffer: Buffer.from('{"schemaVersion":20}'),
-    });
+  await page.getByLabel("选择 JSON 备份", { exact: true }).setInputFiles({
+    name: "invalid.json",
+    mimeType: "application/json",
+    buffer: Buffer.from('{"schemaVersion":20}'),
+  });
   await expect(page.getByRole("status")).toContainText("导入失败");
   await page.getByRole("button", { name: "恢复初始清单", exact: true }).click();
   await page.getByRole("button", { name: "取消", exact: true }).click();
@@ -176,6 +176,6 @@ test("desktop overview", async ({ page }) => {
     fullPage: true,
   });
   await expect(
-    page.getByRole("heading", { name: "从容打包，开启下一程。" }),
+    page.getByRole("heading", { name: "总览", exact: true }),
   ).toBeVisible();
 });

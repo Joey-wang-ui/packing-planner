@@ -308,26 +308,15 @@ export default function App() {
           <span className="brand-mark">
             <Luggage size={23} />
           </span>
-          <span>
-            USC Packing
-            <span className="brand-sub">PLANNER / 洛杉矶出发计划</span>
-          </span>
+          <span>USC Packing Planner</span>
         </a>
-        <div className="workspace">
-          <span className="avatar">USC</span>
-          <div>
-            我的留学旅程<small>Fall forward. Pack thoughtfully.</small>
-          </div>
-          <span className="dot" />
-        </div>
-        <p className="nav-label">WORKSPACE</p>
         <nav>
           <button
             className={page === "dashboard" ? "active" : ""}
             onClick={() => go("dashboard")}
           >
             <LayoutDashboard size={18} />
-            总览 <span className="nav-en">Overview</span>
+            总览
           </button>
           <button
             className={page === "list" && category === "all" ? "active" : ""}
@@ -336,7 +325,7 @@ export default function App() {
             <ListChecks size={18} />
             全部清单 <span className="count">{data.items.length}</span>
           </button>
-          <p className="nav-label">PACKING SPACES</p>
+          <div className="nav-divider" />
           {categories.map((c) => {
             const Icon = icons[c];
             return (
@@ -353,7 +342,7 @@ export default function App() {
               </button>
             );
           })}
-          <p className="nav-label">PREFERENCES</p>
+          <div className="nav-divider" />
           <button
             className={page === "settings" ? "active" : ""}
             onClick={() => go("settings")}
@@ -362,17 +351,6 @@ export default function App() {
             设置与备份
           </button>
         </nav>
-        <div className="sidebar-bottom">
-          <div className="destination">
-            <Plane size={17} />
-            <span>
-              下一站，洛杉矶<small>University of Southern California</small>
-            </span>
-          </div>
-          <p>
-            <span className="dot" /> 仅保存在此浏览器 · 无云端同步
-          </p>
-        </div>
       </aside>
       {nav && (
         <button
@@ -391,8 +369,6 @@ export default function App() {
             >
               <Menu size={20} />
             </button>
-            <span className="muted">我的工作区</span>
-            <span className="slash">/</span>
             <span>
               {page === "dashboard"
                 ? "旅程总览"
@@ -425,25 +401,15 @@ export default function App() {
           )}
           <div className="page-heading">
             <div>
-              <div className="eyebrow">
-                USC PACKING PLANNER <span>·</span> LOS ANGELES, CA
-              </div>
               <h1>
                 {page === "dashboard"
-                  ? "从容打包，开启下一程。"
+                  ? "总览"
                   : page === "settings"
-                    ? "你的旅程，你来设定。"
+                    ? "设置与备份"
                     : category === "all"
-                      ? "每一件，都准备妥当。"
+                      ? "行李清单"
                       : labels[category]}
               </h1>
-              <p>
-                {page === "dashboard"
-                  ? "把准备留在这里，把期待带去洛杉矶。"
-                  : page === "settings"
-                    ? "管理出发计划，给每一次准备留一份备份。"
-                    : "整理行囊的小事，让远行更安心。"}
-              </p>
             </div>
             {page !== "settings" && (
               <button className="btn primary" onClick={() => setEdit(null)}>
@@ -452,32 +418,20 @@ export default function App() {
               </button>
             )}
           </div>
-          <div className="source-notice">
-            <ClipboardCheck size={18} />
-            <span>
-              <strong>清单已就位</strong> 已从你的 Excel 导入 92
-              项原始记录。按需、各1 和范围数量均保留原文。
-            </span>
-          </div>
           {page === "dashboard" && (
             <>
               <section className="departure">
                 <div>
-                  <div className="eyebrow">THE NEXT CHAPTER</div>
-                  <h2>
-                    你好，洛杉矶。<span>Hello, Los Angeles.</span>
-                  </h2>
+                  <h2>洛杉矶 · USC</h2>
                   <p>
                     <Plane size={16} />
                     {new Date(
                       data.departureDate + "T12:00:00",
-                    ).toLocaleDateString("en-US", {
+                    ).toLocaleDateString("zh-CN", {
                       month: "long",
                       day: "numeric",
                       year: "numeric",
                     })}
-                    <span className="divider" />
-                    USC · 研究生 · 校外公寓
                   </p>
                 </div>
                 <div className="countdown">
@@ -488,14 +442,12 @@ export default function App() {
                         <strong>{days}</strong>
                         <span>天</span>
                       </div>
-                      <small>DEPARTURE COUNTDOWN</small>
                     </>
                   ) : (
                     <>
                       <strong className="departed">
                         {days === 0 ? "今日出发" : "已经出发"}
                       </strong>
-                      <small>祝你开启精彩的新旅程</small>
                     </>
                   )}
                 </div>
@@ -512,7 +464,6 @@ export default function App() {
                     {stats.total}
                     <small>项</small>
                   </strong>
-                  <p>让每一件物品都有归处</p>
                 </div>
                 <div className="stat">
                   <span>
@@ -522,7 +473,6 @@ export default function App() {
                     {stats.complete}
                     <small>项</small>
                   </strong>
-                  <p>又离准备就绪近了一步</p>
                 </div>
                 <div className="stat">
                   <span>
@@ -536,9 +486,7 @@ export default function App() {
                 </div>
               </section>
               <div className="section-title">
-                <h2>
-                  行囊进度 <span>YOUR PACKING SPACES</span>
-                </h2>
+                <h2>分类进度</h2>
                 <button className="text-btn" onClick={() => go("list")}>
                   查看全部 <ArrowRight size={15} />
                 </button>
@@ -560,17 +508,6 @@ export default function App() {
                         <ArrowUpRight size={17} />
                       </div>
                       <h3>{labels[c]}</h3>
-                      <p>
-                        {c === "case26"
-                          ? "核心生活用品"
-                          : c === "case28"
-                            ? "补充衣物与个人用品"
-                            : c === "backpack"
-                              ? "证件、电脑及贵重物品"
-                              : c === "shopping"
-                                ? "抵达洛杉矶后购买"
-                                : "重要事项，逐一确认"}
-                      </p>
                       <div className="space-progress">
                         <span>
                           {p.complete} / {p.total} 已完成
@@ -618,20 +555,8 @@ export default function App() {
                     <div className="compact-empty">
                       <CheckCheck size={26} />
                       <p>暂时没有待办的重要物品</p>
-                      <small>添加 P0 / P1 物品后会显示在这里</small>
                     </div>
                   )}
-                </section>
-                <section className="travel-note">
-                  <span className="eyebrow">A LITTLE REMINDER</span>
-                  <Backpack size={32} />
-                  <h3>轻一点，也安心一点。</h3>
-                  <p>
-                    实际称重是行李额度的参考依据。出发前记得核实航空公司的最新规定，并备份你的清单。
-                  </p>
-                  <button className="text-btn" onClick={() => go("settings")}>
-                    管理重量与备份 <ArrowRight size={16} />
-                  </button>
                 </section>
               </div>
             </>
@@ -739,9 +664,12 @@ export default function App() {
                 )}
               </section>
               {(category === "case26" || category === "case28") && (
-                <p className="muted small">
-                  重量额度与实际称重可在「设置与备份」中独立管理。
-                </p>
+                <button
+                  className="text-btn weight-link"
+                  onClick={() => go("settings")}
+                >
+                  管理重量 <ArrowRight size={15} />
+                </button>
               )}
             </>
           )}
@@ -752,9 +680,6 @@ export default function App() {
                   <Plane size={20} />
                   出发计划
                 </h2>
-                <p className="muted">
-                  默认前往洛杉矶 · University of Southern California · 校外公寓
-                </p>
                 <label className="date-label">
                   出发日期
                   <input
@@ -771,13 +696,10 @@ export default function App() {
                 </label>
               </section>
               <div className="section-title">
-                <h2>
-                  行李重量 <span>WEIGHT MANAGEMENT</span>
-                </h2>
+                <h2>行李重量</h2>
               </div>
               <p className="muted small">
-                默认 23 kg /
-                件仅作参考，请按实际航司额度调整。实际称重与估算分开记录。
+                23 kg / 件仅供参考，以航司额度为准。
               </p>
               <div className="weight-grid">
                 {(["case26", "case28"] as const).map((c) => {
@@ -889,8 +811,7 @@ export default function App() {
                   数据备份
                 </h2>
                 <p>
-                  数据仅保存在当前浏览器，不会跨设备自动同步。清理浏览器数据可能丢失清单，请定期导出
-                  JSON 备份。
+                  数据仅存于当前浏览器，不跨设备同步。清理浏览器前请导出备份。
                 </p>
                 <div className="backup-actions">
                   <button className="btn" onClick={() => backup()}>
@@ -905,19 +826,13 @@ export default function App() {
                     导入 JSON 备份
                   </button>
                 </div>
-                <small className="muted">
-                  导入前校验格式并二次确认，将完整替换当前清单、出发日期和重量设置。
-                </small>
               </section>
               <section className="panel settings-panel danger-panel">
                 <h2>
                   <RotateCcw size={20} />
                   恢复初始清单
                 </h2>
-                <p>
-                  恢复 Excel 的全部 92
-                  项初始物品，替换当前物品及状态，保留日期和重量设置。请先导出备份。
-                </p>
+                <p>恢复原始 92 项清单及状态，保留日期与重量设置。请先备份。</p>
                 <button
                   className="btn danger"
                   onClick={() => setConfirm("reset")}
@@ -927,16 +842,6 @@ export default function App() {
               </section>
             </>
           )}
-          <footer>
-            <span>USC Packing Planner</span>
-            <span>
-              为新旅程，留一点从容。
-              <span className="footer-detail">
-                {" "}
-                · 个人工具，非 USC 官方应用
-              </span>
-            </span>
-          </footer>
         </main>
       </div>
       <input

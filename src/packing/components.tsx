@@ -227,9 +227,7 @@ export function Editor({
           </p>
         )}
         <p className="muted small">
-          {item
-            ? "有效修改实时自动保存在当前浏览器，关闭即可。"
-            : "添加后自动保存，随时可以继续编辑。"}
+          {item ? "修改自动保存" : "添加后自动保存"}
         </p>
         <div className="modal-actions">
           <button type="button" className="btn" onClick={close}>

@@ -1839,3 +1839,66 @@ main {
     margin-top: 26px;
   }
 }
+
+/* Departure is a compact date/status row, without a greeting or hero treatment. */
+.departure {
+  min-height: 0;
+  padding: 18px 22px;
+  background: #fff;
+  border-color: #e6e7eb;
+  gap: 16px;
+}
+.departure-date {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.departure-date > span {
+  color: #81838d;
+  font-size: 11px;
+}
+.departure-date time {
+  font-size: 14px;
+  font-weight: 500;
+  color: #34353a;
+}
+.countdown {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.countdown > span {
+  color: #81838d;
+  font-size: 12px;
+}
+.countdown strong {
+  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+.countdown > div span {
+  color: #81838d;
+  font-size: 12px;
+}
+.countdown .departed {
+  font-size: 18px;
+}
+@media (max-width: 560px) {
+  .departure {
+    min-height: 0;
+    padding: 16px;
+    align-items: center;
+  }
+  .departure-date time {
+    font-size: 13px;
+  }
+  .countdown {
+    display: block;
+  }
+  .countdown > span {
+    font-size: 10px;
+  }
+  .countdown strong {
+    font-size: 30px;
+  }
+}

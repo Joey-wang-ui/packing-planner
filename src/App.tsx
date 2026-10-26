@@ -421,10 +421,9 @@ export default function App() {
           {page === "dashboard" && (
             <>
               <section className="departure">
-                <div>
-                  <h2>洛杉矶 · USC</h2>
-                  <p>
-                    <Plane size={16} />
+                <div className="departure-date">
+                  <span>出发日期</span>
+                  <time dateTime={data.departureDate}>
                     {new Date(
                       data.departureDate + "T12:00:00",
                     ).toLocaleDateString("zh-CN", {
@@ -432,7 +431,7 @@ export default function App() {
                       day: "numeric",
                       year: "numeric",
                     })}
-                  </p>
+                  </time>
                 </div>
                 <div className="countdown">
                   {days > 0 ? (
@@ -450,9 +449,6 @@ export default function App() {
                       </strong>
                     </>
                   )}
-                </div>
-                <div className="flight-path" aria-hidden="true">
-                  <Plane size={76} />
                 </div>
               </section>
               <section className="stats">
